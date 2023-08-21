@@ -39,7 +39,7 @@ Popular Products
 
 
 Special Offers
-![offer](https://github.com/SDInfinity/Nike-Landing-Page/assets/102734212/a209025d-0d10-4c1b-bf99-31eeb6cc9782)
+![offer](https://github.com/SDInfinity/Nike-Landing-Page/assets/102734212/de0d50c8-c5ea-4df3-84fd-80d89bfec3ab)
 
 
 
