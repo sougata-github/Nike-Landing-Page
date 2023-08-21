@@ -1,4 +1,4 @@
-# Nike Landing Page React App
+# Nike Landing Page in React
 
 This project showcases a fully responsive modern Nike landing page created using React and Tailwind CSS.It has a stunning UI, captivating animations, and seamless user experience.
 
