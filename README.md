@@ -20,7 +20,7 @@ In addition, the project also features:
 - **Card Components**: Different card components for each section.
 
  <br>
- <h2>Preview</h2>h2>
+ <h2>Preview</h2>
  <br>
 
 Here are some screenshots of different sections:
