@@ -19,8 +19,9 @@ In addition, the project also features:
 - **Buttons**: Interactive buttons for navigation and calls to action.
 - **Card Components**: Different card components for each section.
 
-
-## Preview
+ <br>
+ <h2>Preview</h2>h2>
+ <br>
 
 Here are some screenshots of different sections:
 
