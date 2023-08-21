@@ -15,7 +15,6 @@ const Button = ({
     font-montserrat 
     text-lg 
     leading-none
-    text-white
     ${
       backgroundColor
         ? `${backgroundColor} ${textColor} ${borderColor}`
