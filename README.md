@@ -21,7 +21,6 @@ In addition, the project also features:
 
 
  <h2>Preview</h2>
- <br>
 
 Here are some screenshots of different sections:
 
