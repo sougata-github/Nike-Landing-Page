@@ -18,7 +18,7 @@ const Button = ({
     ${
       backgroundColor
         ? `${backgroundColor} ${textColor} ${borderColor}`
-        : "bg-coral-red text-whiteborder-coral-red"
+        : "bg-coral-red text-white"
     } 
      rounded-full
      
