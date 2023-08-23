@@ -22,7 +22,7 @@ In addition, the project also features:
 
  <h2>Preview</h2>
 
-Here are some screenshots of different sections:
+Here are screenshots of different sections:
 
 Navbar
 ![nav](https://github.com/SDInfinity/Nike-Landing-Page/assets/102734212/2cce0a6c-9d1d-4d86-a689-4c0db6f81a58)
