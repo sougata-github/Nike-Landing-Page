@@ -4,17 +4,17 @@ import { reviews } from "../constants";
 const CustomerReviews = () => {
   return (
     <section className='max-container'>
-      <h3 className='font-palanquin text-center text-4xl font-bold'>
+      <h3 className='font-palanquin text-center text-4xl font-bold' data-aos="fade-up">
         What Our
         <span className='text-coral-red'> Customers </span>
         Say?
       </h3>
-      <p className='m-auto mt-4 max-w-lg  text-center info-text'>
+      <p className='m-auto mt-4 max-w-lg  text-center info-text' data-aos="fade-up">
         Hear genuine stories from our satisfied customers about their
         exceptional experiences with us.
       </p>
 
-      <div className='mt-24 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14'>
+      <div className='mt-24 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14'  data-aos="fade-down">
         {reviews.map((review, index) => (
           <ReviewCard
             key={index}
