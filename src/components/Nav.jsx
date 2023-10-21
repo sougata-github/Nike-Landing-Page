@@ -7,10 +7,7 @@ const Nav = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <header
-      className="padding-x py-8 absolute z-10 w-full"
-      data-aos="fade-down"
-    >
+    <header className="padding-x py-8 absolute z-10 w-full">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img
@@ -36,21 +33,21 @@ const Nav = () => {
         </ul>
 
         {toggleMenu ? (
-          <div className="bg-gray-100 transition-all ease-in-out duration-100 px-2 py-0 absolute top-[20px] right-0  hidden max-lg:block text-right rounded-sm">
+          <div className="bg-black ease-in-out duration-100 py-8 px-5 absolute top-[20px] right-[10px]  hidden max-lg:flex flex-col items-end text-right rounded-lg  z-20">
             <button
-              className="my-2 mr-2 font-semibold text-xl text-slate-500 leading-none"
+              className="my-2 mr-2 font-semibold text-xl leading-none pb-5 text-white"
               onClick={() => {
                 setToggleMenu(false);
               }}
             >
               x
             </button>
-            <ul className="flex justify-center items-center flex-col gap-1 py-2 text-lg">
+            <ul className="flex justify-center items-center flex-col gap-12 py-2 text-lg">
               {navLinks.map((item) => (
                 <li key={item.label}>
                   <a
                     href={item.href}
-                    className="font-montserrat leading-normal text-lg text-slate-gray"
+                    className="font-montserrat leading-normal text-lg text-white"
                   >
                     {item.label}
                   </a>
