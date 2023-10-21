@@ -7,7 +7,7 @@ const Nav = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="padding-x py-8 absolute z-20 w-full">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img
@@ -33,7 +33,7 @@ const Nav = () => {
         </ul>
 
         {toggleMenu ? (
-          <div className=" ease-in-out duration-100 pt-4 pb-8 px-10 absolute top-[20px] right-[10px]  hidden max-lg:flex flex-col items-end text-right rounded-lg bg-black">
+          <div className=" ease-in-out duration-100 pt-4 pb-8 px-10 absolute top-[20px] right-[10px] hidden max-lg:flex flex-col items-end text-right rounded-lg bg-black z-20">
             <button
               className="my-2 mr-2 font-semibold text-xl leading-none pb-5 text-white"
               onClick={() => {
