@@ -33,7 +33,7 @@ const Nav = () => {
         </ul>
 
         {toggleMenu ? (
-          <div className="bg-black ease-in-out duration-100 py-8 px-5 absolute top-[20px] right-[10px]  hidden max-lg:flex flex-col items-end text-right rounded-lg  z-20">
+          <div className=" ease-in-out duration-100 pt-4 pb-8 px-10 absolute top-[20px] right-[10px]  hidden max-lg:flex flex-col items-end text-right rounded-lg bg-black">
             <button
               className="my-2 mr-2 font-semibold text-xl leading-none pb-5 text-white"
               onClick={() => {
