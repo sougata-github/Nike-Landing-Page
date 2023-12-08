@@ -1,11 +1,23 @@
 import { hamburger } from "../assets/icons";
 import { headerLogo } from "../assets/images";
 import { navLinks } from "../constants";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import close from "../assets/icons/close.png";
 
 const Nav = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setToggleMenu(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header className="padding-x py-8 absolute z-20 w-full">
@@ -33,37 +45,50 @@ const Nav = () => {
           ))}
         </ul>
 
-        <div className="hidden max-lg:block transition-all ease-in-out cursor-pointer duration-100">
-          <img
-            src={toggleMenu ? close : hamburger}
-            alt="hamburger icon"
-            width={22}
-            height={22}
-            onClick={() => setToggleMenu((prev) => !prev)}
-          />
-        </div>
-        {toggleMenu && (
-          <div
-            className=" ease-in-out duration-100 pt-4 pb-8 px-10 transition-all
-            absolute top-[75px] right-[40px] 
+        {toggleMenu ? (
+          <>
+            <div
+              className="p-20 
+            fixed inset-0 min-h-screen
             hidden max-lg:flex 
-            flex-col items-end 
-            text-right 
-            rounded-md bg-gray-100 z-20"
-          >
-            <ul className="flex justify-center items-center flex-col gap-12 py-2 text-lg ">
-              {navLinks.map((item) => (
-                <li key={item.label}>
-                  <a
-                    href={item.href}
-                    className="font-montserrat leading-normal text-lg text-gray-500 hover:text-black"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+            flex-col items-center gap-10 justify-center
+            rounded-md bg-gray-50 z-20 "
+            >
+              <ul className="flex items-center flex-col gap-12 py-2 text-lg ">
+                {navLinks.map((item) => (
+                  <li key={item.label}>
+                    <a
+                      href={item.href}
+                      className="font-montserrat leading-normal text-lg text-gray-500 hover:text-black"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <div className="w-fit p-[2px] flex items-center">
+                <img
+                  src={close}
+                  alt="close icon"
+                  width={18}
+                  height={18}
+                  onClick={() => setToggleMenu((prev) => !prev)}
+                  className="cursor-pointer opacity-50"
+                />
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            <img
+              src={hamburger}
+              alt="hamburger icon"
+              width={22}
+              height={22}
+              onClick={() => setToggleMenu((prev) => !prev)}
+              className="cursor-pointer lg:hidden"
+            />
+          </>
         )}
       </nav>
     </header>
